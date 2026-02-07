@@ -12,10 +12,8 @@
         :root {
             --verde-oscuro: #2B4C0B;
             --verde-vibrante: #7CB342;
-            --verde-limon-intenso: #AEEA00; 
             --crema: #FAFAF2;
             --crema-dark: #F2F2E6;
-            --amarillo: #F4FF81;
         }
 
         body {
@@ -28,7 +26,7 @@
             padding: 1rem;
         }
 
-        /* Proporción para impresión (A4/Carta) optimizada para evitar cortes */
+        /* Formato A4/Carta vertical ajustado para evitar desplazamientos */
         .poster-canvas {
             width: 700px; 
             height: 980px;
@@ -59,7 +57,7 @@
 
         .qr-container {
             background: white;
-            padding: 10px;
+            padding: 8px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
             display: flex;
@@ -68,7 +66,6 @@
             border: 1px solid rgba(43, 76, 11, 0.1);
         }
 
-        /* Color verde oscuro del QR aplicado al texto */
         .text-verde-qr {
             color: var(--verde-oscuro);
         }
@@ -84,65 +81,62 @@
     <div class="poster-canvas">
         <div class="border-pattern"></div>
 
-        <!-- Header / Logo Extra Grande (Espacio optimizado) -->
-        <div class="pt-0 pb-0 flex flex-col items-center">
+        <!-- Encabezado Compacto -->
+        <div class="pt-2 pb-0 flex flex-col items-center">
             <img src="https://lh3.googleusercontent.com/d/1LNTkboFIGhJdPeAVw-08ffqZQP3cqIHm" 
                  alt="" 
-                 class="w-64 h-64 object-contain mb-0">
-            <h1 class="text-3xl font-bold text-verde-qr tracking-tight leading-none">LA COCINA DE LA ABUELA</h1>
-            <div class="w-20 h-1 bg-verde-vibrante mt-0.5"></div>
+                 class="w-52 h-52 object-contain mb-0">
+            <h1 class="text-3xl font-bold text-verde-qr tracking-tight leading-none -mt-3">LA COCINA DE LA ABUELA</h1>
+            <div class="w-24 h-1 bg-verde-vibrante mt-1 rounded-full"></div>
         </div>
 
-        <!-- Imagen Principal: Limón de Oro (Altura optimizada para balancear con la galería) -->
-        <div class="px-6 mt-2 mb-2">
-            <div class="rounded-3xl overflow-hidden shadow-lg border-4 border-white h-[280px]">
+        <!-- Imagen Principal: El Limón de Oro -->
+        <div class="px-8 mt-4 mb-2">
+            <div class="rounded-3xl overflow-hidden shadow-lg border-4 border-white h-72">
                 <img src="https://lh3.googleusercontent.com/d/1LCOv3rl9aadpVSmaCfFtMD7aYKQLMvnw" 
                      alt="" 
                      class="w-full h-full object-cover object-center">
             </div>
         </div>
 
-        <!-- Manifiesto Central (Compactado) -->
-        <div class="px-12 text-center mb-1">
-            <h2 class="text-xl italic font-bold text-verde-qr mb-0 leading-tight">Nuestra Esencia: Un Legado Vivo</h2>
+        <!-- Manifiesto -->
+        <div class="px-14 text-center mb-2">
+            <h2 class="text-lg italic font-bold text-verde-qr mb-0 leading-tight">Nuestra Esencia: Un Legado Vivo</h2>
             <p class="text-xs text-gray-700 leading-relaxed font-light italic">
                 "No solo vendemos comida, vendemos un pedazo de nuestra tierra y nuestra historia."
             </p>
         </div>
 
-        <!-- Galería Secundaria: Trío de Tradición (Agrandada como estaba anteriormente) -->
-        <div class="px-6 grid grid-cols-3 gap-3 mb-2">
-            <!-- Mote de Queso -->
-            <div class="rounded-2xl overflow-hidden shadow-sm border-2 border-white h-40">
+        <!-- Galería Inferior: Trío de Tradición -->
+        <div class="px-8 grid grid-cols-3 gap-3 mb-4">
+            <div class="rounded-2xl overflow-hidden shadow-sm border-2 border-white h-36">
                 <img src="https://lh3.googleusercontent.com/d/1TVwU2wRXwy4kwGYE4h9Zmy-zg0c9t7tq" 
                      alt="" 
                      class="w-full h-full object-cover object-center">
             </div>
-            <!-- Mojarra Frita -->
-            <div class="rounded-2xl overflow-hidden shadow-sm border-2 border-white h-40">
+            <div class="rounded-2xl overflow-hidden shadow-sm border-2 border-white h-36">
                 <img src="https://lh3.googleusercontent.com/d/1Y7H9-ZzvWt8R1P5sqo9uhnNZeiwhrqyo" 
                      alt="" 
                      class="w-full h-full object-cover object-center">
             </div>
-            <!-- Sancocho -->
-            <div class="rounded-2xl overflow-hidden shadow-sm border-2 border-white h-40">
+            <div class="rounded-2xl overflow-hidden shadow-sm border-2 border-white h-36">
                 <img src="https://lh3.googleusercontent.com/d/1NCtK9Vw9q5G7UtITooxxiQXfjKVR7m0J" 
                      alt="" 
                      class="w-full h-full object-cover object-center">
             </div>
         </div>
 
-        <!-- Sección QR y Acción (Footer del Poster) -->
-        <div class="mt-auto bg-[#F2F2E6] border-t border-black/5 p-6 flex items-center justify-between">
+        <!-- Pie de Página Asegurado -->
+        <div class="mt-auto bg-[#F2F2E6] border-t border-black/5 p-5 flex items-center justify-between">
             <div class="text-left max-w-[65%]">
                 <h3 class="text-2xl font-bold text-verde-qr mb-1 leading-tight">Menú Digital</h3>
-                <p class="text-xs text-verde-qr opacity-80 font-semibold leading-snug">Escanea el código para conocer nuestras recetas ancestrales y reservar tu experiencia.</p>
+                <p class="text-[11px] text-verde-qr opacity-80 font-semibold leading-snug">Escanea el código para conocer nuestras recetas ancestrales y reservar tu experiencia.</p>
                 
-                <div class="mt-4 flex items-center gap-3 text-verde-qr">
+                <div class="mt-3 flex items-center gap-3 text-verde-qr">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
                     </svg>
-                    <span class="text-sm font-bold tracking-widest">@limonarecohotel</span>
+                    <span class="text-xs font-bold tracking-widest">@limonarecohotel</span>
                 </div>
             </div>
 
@@ -151,15 +145,14 @@
     </div>
 
     <script>
-        // Función para generar el código QR de manera segura
         function generateQR() {
             const qrElement = document.getElementById("qrcode");
             if (typeof QRCode !== 'undefined') {
                 qrElement.innerHTML = ""; 
                 new QRCode(qrElement, {
                     text: "https://ecolimonar.github.io/la_cocina_de_la_abuela.html",
-                    width: 110,
-                    height: 110,
+                    width: 105,
+                    height: 105,
                     colorDark : "#2B4C0B",
                     colorLight : "#ffffff",
                     correctLevel : QRCode.CorrectLevel.H
@@ -168,7 +161,6 @@
                 setTimeout(generateQR, 200);
             }
         }
-
         window.onload = generateQR;
     </script>
 </body>
