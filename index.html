@@ -68,7 +68,6 @@
             border: 1px solid rgba(43, 76, 11, 0.1);
         }
 
-        /* Color verde oscuro del QR aplicado al texto */
         .text-verde-qr {
             color: var(--verde-oscuro);
         }
@@ -84,43 +83,51 @@
     <div class="poster-canvas">
         <div class="border-pattern"></div>
 
-        <!-- Header / Logo Extra Grande -->
-        <div class="pt-0 pb-1 flex flex-col items-center">
+        <!-- Header / Logo y Título -->
+        <div class="pt-0 pb-0 flex flex-col items-center">
             <img src="https://lh3.googleusercontent.com/d/1LNTkboFIGhJdPeAVw-08ffqZQP3cqIHm" 
                  alt="" 
-                 class="w-64 h-64 object-contain mb-1">
-            <h1 class="text-3xl font-bold text-verde-qr tracking-tight">LA COCINA DE LA ABUELA</h1>
-            <div class="w-20 h-1 bg-verde-vibrante mt-1"></div>
+                 class="w-64 h-64 object-contain mb-0">
+            <h1 class="text-3xl font-bold text-verde-qr tracking-tight leading-none">LA COCINA DE LA ABUELA</h1>
+            <div class="w-20 h-1 bg-verde-vibrante mt-0.5"></div>
         </div>
 
         <!-- Imagen Principal -->
-        <div class="px-6 mb-3">
-            <div class="rounded-3xl overflow-hidden shadow-lg border-4 border-white h-64">
-                <img src="https://lh3.googleusercontent.com/d/1LCOv3rl9aadpVSmaCfFtMD7aYKQLMvnw" 
+        <div class="px-6 mt-2 mb-2">
+            <div class="rounded-3xl overflow-hidden shadow-lg border-4 border-white h-52">
+                <img src="https://lh3.googleusercontent.com/d/1hdhN7naYyF9UklLVxvNJRBFqMHxix4xs" 
                      alt="" 
                      class="w-full h-full object-cover object-center">
             </div>
         </div>
 
         <!-- Manifiesto Central -->
-        <div class="px-12 text-center mb-2">
-            <h2 class="text-2xl italic font-bold text-verde-qr mb-1 leading-tight">Nuestra Esencia: Un Legado Vivo</h2>
-            <p class="text-base text-gray-700 leading-relaxed font-light italic">
+        <div class="px-12 text-center mb-1">
+            <h2 class="text-xl italic font-bold text-verde-qr mb-0 leading-tight">Nuestra Esencia: Un Legado Vivo</h2>
+            <p class="text-sm text-gray-700 leading-relaxed font-light italic">
                 "No solo vendemos comida, vendemos un pedazo de nuestra tierra y nuestra historia."
             </p>
         </div>
 
-        <!-- Galería Secundaria -->
-        <div class="px-10 grid grid-cols-2 gap-4 mb-4">
-            <div class="rounded-2xl overflow-hidden shadow-sm border-2 border-white h-20">
+        <!-- Galería Secundaria: Trío de Tradición -->
+        <div class="px-6 grid grid-cols-3 gap-3 mb-2">
+            <!-- Mote de Queso -->
+            <div class="rounded-2xl overflow-hidden shadow-sm border-2 border-white h-36">
                 <img src="https://lh3.googleusercontent.com/d/1TVwU2wRXwy4kwGYE4h9Zmy-zg0c9t7tq" 
                      alt="" 
-                     class="w-full h-full object-cover">
+                     class="w-full h-full object-cover object-center">
             </div>
-            <div class="rounded-2xl overflow-hidden shadow-sm border-2 border-white h-20">
-                <img src="https://lh3.googleusercontent.com/d/1c-lBmcwgMt0aiktxr51Tm9CqgvDqLep4" 
+            <!-- Mojarra Frita (Nueva) -->
+            <div class="rounded-2xl overflow-hidden shadow-sm border-2 border-white h-36">
+                <img src="https://lh3.googleusercontent.com/d/1Y7H9-ZzvWt8R1P5sqo9uhnNZeiwhrqyo" 
                      alt="" 
-                     class="w-full h-full object-cover">
+                     class="w-full h-full object-cover object-center">
+            </div>
+            <!-- Sancocho -->
+            <div class="rounded-2xl overflow-hidden shadow-sm border-2 border-white h-36">
+                <img src="https://lh3.googleusercontent.com/d/1NCtK9Vw9q5G7UtITooxxiQXfjKVR7m0J" 
+                     alt="" 
+                     class="w-full h-full object-cover object-center">
             </div>
         </div>
 
